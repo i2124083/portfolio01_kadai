@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Shippori Mincho",serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a :hover{
+    opacity: 0.7;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.page-header,
+.page-hero,
+.page-content,
+.page-footer{
+    /* min-width: 1280px; */
+    width: 100%;
+}
+.page-header{
+    position: fixed;
+    z-index: 10; /*レイヤーの重なり具合*/
+    top: 0;
+    left: 0;
+    padding: 16px 0 24px;
+    background-color: #fff;
+}
+.page-header__inner,
+.page-content__inner{
+    box-sizing: content-box;
+}
+
+.page-header{
+    border-top: solid 4px #7f9916;
+}
+.page-header__inner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.page-header .logo,
+.page-footer .logo{
+    width: 256px;
+}
+.sns-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sns-list__item{
+    width: 24px;
+}
+.sns-list__item:not(:first-child){
+    margin-left: 16px;
+}
+
+.page-header__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.global-nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.global-nav > .sns-list {
+    margin-left: 64px;
+}
+.global-nav > .link-button {
+    margin-left: 64px;
+}
+.link-button{
+    display: table;
+    width: 140px;
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-list__item{
+    margin: 0 12px;
+}
+
+.page-heading{
+    text-align: center;
+    border-bottom: solid 2px #7f9916;
+    padding-bottom: 4px;
+    max-width: 400px;
+    margin: 80px auto 32px;
+}
+
+.feature-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 954px;
+    margin: 0 auto;
+    
+}
+.feature-list__item{
+    max-width: 286px;
+    text-align: center;
+}
+.feature-list__item h3{
+    font-size: 24px;
+    margin: 32px 0 12px 0;
+}
+
+.case-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0 auto;
+    max-width: px;
+}
+.case-list__inner{
+    max-width: 48%;
+    margin-bottom: 24px;
+}
+.case-list__inner img{
+    margin-bottom: 16px;
+}
+
+#price{
+    text-align: center;
+}
+.price-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.price-list__inner{
+    max-width: 30%;
+    margin-bottom: 40px;
+}
+.price-list__inner h3{
+    margin-top: 16px;
+}
+
+#voice{
+    margin-bottom: 126px;
+}
+.voice-list__inner{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.voice-list__inner{
+    border: 2px solid #7f9916;
+    display: flex;
+    
+    border-radius: 8px;
+    padding: 48px 24px;
+    margin-bottom: 32px;
+
+    display: flex;
+}
+.voice-list__inner img{
+    max-width: 96px;
+    margin-bottom: 32px;
+    margin-right: 30px;
+    height: fit-content;
+}
+
+.page-block{
+    max-width: 1080px;
+    margin: 0 auto ;
+}
+#recruit img{
+    margin-bottom: 44px;
+}
+
+#company{
+    margin-top: 50px;
+    margin-bottom: 158px;
+}
+.company-column{
+    display: flex;
+}
+
+.page-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sns-list_f{
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-footer__inner{
+    width: 100%;
+    
+}
+
+.footer-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-data-address {
+    margin-top: 8px;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+/* .footer-column__item{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+} */
+.footer-copy {
+    font-size: 12px;
+  } 
+
+
+@media all and (max-width: 480px) {
+
+    .page-content{
+        width: 92%;
+    }
+    .feature-list,.price-list{
+        flex-direction: column;
+        height: 100%;
+    }
+    .feature-list__item{
+        margin: 0 auto 48px;
+    }
+    .feature-list__item h3{
+        margin-top: 16px;
+    }
+
+    .price-list__inner{
+        max-width: 100%;
+    }
+
+    .company-column{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .company-map iframe{
+        width: 100%;
+    }
+    .global-nav{
+        display: none;
+    }
+ }
